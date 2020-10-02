@@ -11,8 +11,6 @@ echo "postgres password: *******"
 echo "postgres host: $POSTGRES_HOST"
 echo "postgres db: $POSTGRES_DB"
 
-mv /root/activiti-app.properties /usr/local/tomcat/lib/activiti-app.properties
-
 sed -i "s#POSTGRES_USER#${POSTGRES_USER}#g" /usr/local/tomcat/lib/activiti-app.properties
 sed -i "s#POSTGRES_PASSWORD#${POSTGRES_PASSWORD}#g" /usr/local/tomcat/lib/activiti-app.properties
 sed -i "s#POSTGRES_HOST#${POSTGRES_HOST}#g" /usr/local/tomcat/lib/activiti-app.properties
