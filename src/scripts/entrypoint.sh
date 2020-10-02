@@ -18,6 +18,6 @@ sed -i "s#POSTGRES_PASSWORD#${POSTGRES_PASSWORD}#g" /usr/local/tomcat/lib/activi
 sed -i "s#POSTGRES_HOST#${POSTGRES_HOST}#g" /usr/local/tomcat/lib/activiti-app.properties
 sed -i "s#POSTGRES_DB#${POSTGRES_DB}#g" /usr/local/tomcat/lib/activiti-app.properties
 
-$HOME/set-activiti-config.sh
-$HOME/set-activiti-identity-config.sh
-$CATALINA_HOME/bin/catalina.sh run
+/set-activiti-config.sh
+/set-activiti-identity-config.sh
+/usr/local/tomcat/bin/catalina.sh run
